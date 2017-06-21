@@ -1,0 +1,9 @@
+[run]
+omit =
+	*management/commands*
+	*migrations*
+	*site-packages*
+	conpo_project/settings.py
+	conpo_project/wsgi.py
+	manage.py
+	setup.py

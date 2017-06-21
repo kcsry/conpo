@@ -1,4 +1,7 @@
 *.py[cod]
+.cache
+.coverage
 .idea
-var
+htmlcov
 node_modules
+var
