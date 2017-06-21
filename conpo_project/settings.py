@@ -1,5 +1,7 @@
 import os
+
 from environ import Env
+
 env = Env()
 DEBUG = env.bool('DEBUG', default=False)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'conpo.core',
+    'conpo.api',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,4 +74,3 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-

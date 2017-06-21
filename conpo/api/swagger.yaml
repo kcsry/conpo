@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  version: "0.0.0"
+  title: "Conpo"
+  description: ""
+host: "conpo.example.com"
+basePath: "/api/v0"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /events:
+    get:
+      operationId: "listEvents"
+      responses:
+        200:
+          description: "list of events"
+  /competitions:
+    get:
+      operationId: "listCompetitions"
+      responses:
+        200:
+          description: "list of competitions"
+  "/competition/{id}":
+    get:
+      operationId: "getCompetition"
+      parameters:
+      - in: path
+        name: id
+        description: "competition ID"
+        type: string
+        required: true
+      responses:
+        200:
+          description: "competition detail"
